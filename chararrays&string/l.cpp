@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 using namespace std;
 int getlength(char name[])
 {
@@ -198,6 +199,10 @@ int countpalinsubstr(string s)
     }
     return count;
 }
+bool cmp(char a,char b)
+{
+    return a>b;
+}
 int main()
 {
     // //lecture 1
@@ -224,24 +229,29 @@ int main()
     // string b="kavish1";
     // cout<<compare(a,b)<<endl;
 
-    //lecture 2
-    string c = "abbaca";
-    cout<<removeduplicate(c)<<endl;
-    string d = "daabcbaabcbc";
-    string part = "abc";
-    cout<<removeoccurence(d,part)<<endl;
-    string e = "aba";
-    cout<<validpalindrome(e)<<endl;
-    vector<string> f {"23:59","00:00"};
-    cout<<mindiff(f)<<endl;
-    string g = "abc";
-    printsubstr(g);
-    string h = "abc";
-    cout<<countpalinsubstr(h)<<endl;
+    // //lecture 2
+    // string c = "abbaca";
+    // cout<<removeduplicate(c)<<endl;
+    // string d = "daabcbaabcbc";
+    // string part = "abc";
+    // cout<<removeoccurence(d,part)<<endl;
+    // string e = "aba";
+    // cout<<validpalindrome(e)<<endl;
+    // vector<string> f {"23:59","00:00"};
+    // cout<<mindiff(f)<<endl;
+    // string g = "abc";
+    // printsubstr(g);
+    // string h = "abc";
+    // cout<<countpalinsubstr(h)<<endl;
 
     //connect
+    string i = "kavish";
+    sort(i.begin(),i.end(),cmp);
+    cout<<i<<endl;
+    //help ramu leetcode
     
 
-    return 0;
     
+    
+    return 0;    
 }
