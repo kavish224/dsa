@@ -166,9 +166,9 @@ int mindiff(vector<string>& timepoints)
 }
 void printsubstr(string s)
 {
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < s.length(); i++)
     {
-        for (int j = i+1; j <= 3; j++)
+        for (int j = i; j < s.length(); j++)
         {
             cout<<s.substr(i,j)<<endl;
         }
@@ -238,16 +238,17 @@ int main()
     // cout<<validpalindrome(e)<<endl;
     // vector<string> f {"23:59","00:00"};
     // cout<<mindiff(f)<<endl;
-    // string g = "abc";
-    // printsubstr(g);
+    string g = "abc";
+    cout<<g.size();
+    printsubstr(g);
     // string h = "abc";
     // cout<<countpalinsubstr(h)<<endl;
 
-    //connect
-    string i = "kavish";
-    sort(i.begin(),i.end(),cmp);
-    cout<<i<<endl;
-    //help ramu leetcode
-    string str;
-    return 0;    
+    // //connect
+    // string i = "kavish";
+    // sort(i.begin(),i.end(),cmp);
+    // cout<<i<<endl;
+    // //help ramu leetcode
+    // string str;
+    // return 0;    
 }
